@@ -144,7 +144,7 @@ components:
         mkdir -p /projects/bin && cp /usr/bin/oc /projects/bin/oc && cp /usr/bin/kubectl /projects/bin/kubectl
     command:
       - /bin/bash
-    image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+    image: quay.io/openshift/origin-cli:latest  #image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
     sourceMapping: /projects
     mountSources: true
     memoryLimit: 64M
